@@ -1,0 +1,174 @@
+%%
+%% Copyright (c) 2021 Artur Sinila <personal@logarithmus.dev>
+%% CC BY 4.0 License
+%%
+%% Résumé
+%% ------
+%% A short document (1-2 pages) to sum up the job-related accomplishments
+%% and experience.
+%%
+
+% English version
+\documentclass{resume}
+
+% Adjust icon size (default: same size as the text)
+% \iconsize{\Large}
+
+% File information shown at the footer of the last page
+\fileinfo{%
+	\faCopyright{} 2021, Artur Sinila \hspace{0.5em}
+	\creativecommons{by}{4.0} \hspace{0.5em}
+	\githublink{Logarithmus}{resume} \hspace{0.5em}
+	\faEdit{} \today
+}
+
+\name{Artur}{Sinila}
+
+\keywords{GNU, Linux, Programming, Rust, C, C++, Shell}
+
+% \tagline{\icon{\faBinoculars}} <position-to-look-for>}
+% \tagline{<current-position>}
+
+% \photo{<height>}{<filename>}
+
+\profile{
+	\mobile{+380 63 250 52 79}
+	\email{personal@logarithmus.dev}
+	\birthday{1999 Aug.}
+	\address{Kyiv, Ukraine (open for relocation \& remote)} \\
+	\website{logarithmus.dev}
+	\github{Logarithmus}
+	\linkedin{artur-sinila-268aab20b} \\
+	\degree{B.Sc undergraduate in Programmable Mobile Systems}
+	\university{Belarusian State University of Informatics and Radioelectronics} \\
+	% Custom information:
+	% \icontext{<icon>}{<text>}
+	% \iconlink{<icon>}{<link>}{<text>}
+}
+
+\begin{document}
+\makeheader
+
+%======================================================================
+% Summary & Objectives
+%======================================================================
+
+C++, C and Rust programmer. GNU/Linux enthusiast.
+Passionate about technology and learning new skills.
+Contribute to free and open source software projects.
+Like solving challenging problems and optimizing performance.
+
+%======================================================================
+\sectionTitle{Work experience}{\faBriefcase}
+%======================================================================
+\begin{experiences}
+	\experience%
+		[April 2019]%
+		{April 2020}%
+		{Software Developer @ Itransition}%
+		[\begin{itemize}
+			\item Implemented basic Robotic Process Automation (RPA) for JD Edwards ERP system with OpenCV \& Rust
+			\item Maintained Oracle database used as a backend for JD Edwards (e.g. fixing broken data records).
+			\item Set up RDP session over OpenConnect VPN on Ubuntu and documented the whole process for coworkers.
+			\item Communicated in English with Japanese customer.
+		\end{itemize}]
+\end{experiences}
+
+%======================================================================
+\sectionTitle{Skills}{\faWrench}
+%======================================================================
+\begin{competences}[10em]
+	\competence{Operating Systems}{
+		\icon{\faLinux} GNU/Linux (using on daily basis for 3 years), \icon{\faWindows} Windows
+	}
+	\competence{Programming}{%
+		Proficient: \textbf{C++} and \textbf{C} (2+ years), \textbf{Rust} (1+ year).
+		Familiar: \textbf{Java}, \textbf{Kotlin}
+	}
+	\competence{Tools}{%
+		Git, Vim, Shell, Make, CMake, SSH, GDB, LaTeX
+	}
+	\competence{Databases}{%
+		MariaDB, MySQL
+	}
+	\competence{Cloud \& Virtualization}{%
+		KVM, Digital Ocean, Firebase
+	}
+	\competence{Embedded systems}{%
+		AVR, KiCad, basic soldering
+	}
+	\competence{Mobile development}{%
+		Android
+	}
+	\competence{\icon{\faLanguage} Languages}{
+		\textbf{English} --- Intermediate (B1), %
+		\textbf{Ukrainian} --- Beginner (A1), %
+		\textbf{Belarusian, Russian} --- native
+	}
+\end{competences}
+
+%======================================================================
+\sectionTitle{Personal Projects}{\faCode}
+%======================================================================
+\begin{itemize}
+	\item \link{https://github.com/Logarithmus/astro-cpp}{\textbf{astro-cpp}}
+		(\textbf{C++}):
+		Astrodynamics library in C++. Includes elliptic Kepler's equation \& Lambert's problem solvers.
+	\item \link{https://github.com/Logarithmus/simple-cpp-programs}{\textbf{simple-cpp-programs}}
+		(\textbf{C++}):
+		simple programs written to practice C++\\
+		(unique digits counter, binary-search number guessing game, multiplication table quiz, quadratic equation solver)
+	\item \link{https://github.com/Logarithmus/led-wave-potentiometer}{\textbf{led-wave-potentiometer}}
+		(\textbf{C}, \textbf{C++}, \textbf{FreeRTOS}):
+		10 blinking LEDs, blinking speed is controlled by the potentiometer and is displayed on the 7-segment display. Employs FreeRTOS for multitasking. Based on ATMega88PA AVR microcontroller.
+	\item \link{https://github.com/Logarithmus/battleship}{\textbf{battleship}}
+		\textbf{[WIP]} (\textbf{C++, Boost Beast, SFML}):
+		Battleship game with multiplayer.
+	\item \link{https://github.com/Logarithmus/railway-reservation-rs}{\textbf{railway-reservation-rs}}
+		(\textbf{Rust}, \textbf{actix-web}, \textbf{MySQL (MariaDB)}):
+		Railway tickets reservation website (university course project).
+	\item \link{https://github.com/Graph-Donte-Crypto/AstroGraphicRust}{\textbf{AstroGraphicRust}}
+		\textbf{[WIP]} (\textbf{Rust}, \textbf{kiss3d}):
+		a project for visualization of interplanetary trajectories with gravity assists
+	\item \link{https://github.com/Logarithmus/paint-droid}{\textbf{paint-droid}}
+		(\textbf{Android}, \textbf{Kotlin}):
+		Paint app supporting choosing pen color \& width, undo/redo, drawing of shapes and text labels.
+	\item \link{https://github.com/Logarithmus/quiz-droid}{\textbf{quiz-droid}}
+		(\textbf{Android}, \textbf{Kotlin}):
+		Quiz Android app, uses Firebase for fetching questions \& answers.
+	\item \link{https://github.com/Logarithmus/table-of-users}{\textbf{table-of-users}}
+		(\textbf{Java}, \textbf{Spring Boot}, \textbf{Hibernate}):
+		Basic CRUD app. OAuth2 via Facebook, Google and GitHub.
+	\item \link{https://github.com/Logarithmus/resume}{\textbf{resume}}
+		(\textbf{\LaTeX}):
+		The template and source files of \emph{this resume}.
+\end{itemize}
+
+%======================================================================
+\sectionTitle{Contributions}{\faCodeBranch}
+%======================================================================
+\begin{itemize}
+	\item \link{https://github.com/void-linux/void-packages}{\textbf{Void Linux}} (Linux distribution): added new packages (\link{https://github.com/void-linux/void-packages/pull/25159}{\textbf{avr-gdb}}, \link{https://github.com/void-linux/void-packages/pull/25742}{\textbf{simutron}}, \link{https://github.com/void-linux/void-packages/pull/25360}{\textbf{symlinks}}, \link{https://github.com/void-linux/void-packages/pull/25942}{\textbf{avra}}),\\
+		updated \& fixed packages (\link{https://github.com/void-linux/void-packages/pull/25147}{\textbf{avrdude}}, \link{https://github.com/void-linux/void-packages/pull/26144}{\textbf{chromium}}, \link{https://github.com/void-linux/void-packages/pull/26347}{\textbf{s3cmd}}, \link{https://github.com/void-linux/void-packages/pull/29096}{\textbf{imv}}, \link{https://github.com/void-linux/void-packages/pull/31667}{\textbf{pulseeffects}}, \link{https://github.com/void-linux/void-packages/pull/31807}{\textbf{rust-analyzer}})
+	\item \link{https://github.com/rui314/mold}{\textbf{mold}} (a modern linker): improved docs, optimized CI, helped to fix some tests.
+	\item \link{https://gitlab.com/lucciocarreras/sayonara-player}{\textbf{Sayonara}} (music player): fix compilation with \link{https://musl.libc.org}{\textbf{musl}} libc
+		\item \link{https://github.com/autozimu/LanguageClient-neovim}{\textbf{LanguageClient-neovim}} (LSP plugin for NeoVIM): added support for rust-analyzer's type \& parameter hints.
+		\item \link{https://github.com/sadko4u/lsp-plugins}{\textbf{lsp-plugins}} (audio plugins for Linux): fix compilation with \link{https://musl.libc.org}{\textbf{musl}}, improve debugging experience,\\
+		support cross-compilation (waiting for review)
+	\item \link{https://github.com/avr-rust/avr-mcu}{\textbf{avr-rust/avr-mcu}}, \link{https://github.com/avr-rust/avrd}{\textbf{avr-rust/avrd}} (AVR device definitions): improve compile times, made code more idiomatic
+\end{itemize}
+
+%======================================================================
+\sectionTitle{Education}{\faBriefcase}
+%======================================================================
+\begin{educations}
+	\education%
+		{September 2017}%
+		[June 2021]%
+		{Belarusian State University of Informatics and Radioelectronics}%
+		{Faculty of Computer-Aided Design}%
+		{Programmable Mobile Systems}%
+		{B.Sc undergraduate}
+\end{educations}
+
+\end{document}
