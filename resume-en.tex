@@ -35,7 +35,7 @@
 	\mobile{+380 63 250 52 79}
 	\email{personal@logarithmus.dev}
 	\birthday{1999 Aug.}
-	\address{Kyiv, Ukraine (open for relocation \& remote)} \\
+	\address{Kyiv, Ukraine (prefer remote)} \\
 	\website{logarithmus.dev}
 	\github{Logarithmus}
 	\linkedin{artur-sinila} \\
@@ -53,9 +53,9 @@
 % Summary & Objectives
 %======================================================================
 
-C++, C and Rust programmer. GNU/Linux enthusiast.
+Rust, C and C++ programmer. GNU/Linux enthusiast.
 Passionate about technology and learning new skills.
-Contribute to free and open source software projects.
+Contribute to free \& open source software projects.
 Like solving challenging problems and optimizing performance.
 
 %======================================================================
@@ -63,12 +63,22 @@ Like solving challenging problems and optimizing performance.
 %======================================================================
 \begin{experiences}
 	\experience%
+		[Septermber 2021]%
+		{November 2021}%
+		{Rust software developer @ Polytech Software}%
+		[\begin{itemize}
+          \item Participated in Agile development of data backup software in Rust with cloud storage (AWS).
+          \item Implemented retry logic for backup transactions.
+          \item Fixed various bugs, wrote tests, did chores (updated dependencies, fixed lint warnings, etc.)
+          \item Daily communicated in English with coworkers \& American customer.
+		  \end{itemize}]
+	\experience%
 		[April 2019]%
 		{April 2020}%
-		{Software Developer @ Itransition}%
+		{Software developer @ Itransition, Belarus}%
 		[\begin{itemize}
 			\item Implemented basic Robotic Process Automation (RPA) for JD Edwards ERP system with OpenCV \& Rust
-			\item Maintained Oracle database used as a backend for JD Edwards (e.g. fixing broken data records).
+			\item Maintained Oracle database used as a backend for JD Edwards.
 			\item Set up RDP session over OpenConnect VPN on Ubuntu and documented the whole process for coworkers.
 			\item Communicated in English with Japanese customer.
 		\end{itemize}]
@@ -79,20 +89,20 @@ Like solving challenging problems and optimizing performance.
 %======================================================================
 \begin{competences}[10em]
 	\competence{Operating Systems}{
-		\icon{\faLinux} GNU/Linux (using on daily basis for 3 years), \icon{\faWindows} Windows
+      \icon{\faLinux} GNU/Linux (my daily driver for 4 years), \icon{\faWindows} Windows
 	}
 	\competence{Programming}{%
-		Proficient: \textbf{C++} and \textbf{C} (2+ years), \textbf{Rust} (1+ year).
-		Familiar: \textbf{Java}, \textbf{Kotlin}
+		Primary: \textbf{C++} and \textbf{C} (3 years), \textbf{Rust} (2 years).
+		Secondary: \textbf{Java}, \textbf{Kotlin}
 	}
 	\competence{Tools}{%
-		Git, Vim, Shell, Make, CMake, SSH, GDB, LaTeX
+		Git, NeoVim, Shell, Make, CMake, SSH, GDB, LaTeX
 	}
 	\competence{Databases}{%
-		MariaDB, MySQL
+		MariaDB, MySQL, Firebase, RocksDB, MongoDB
 	}
 	\competence{Cloud \& Virtualization}{%
-		KVM, Digital Ocean, Firebase
+		Docker, Digital Ocean, AWS
 	}
 	\competence{Embedded systems}{%
 		AVR, KiCad, basic soldering
@@ -121,9 +131,6 @@ Like solving challenging problems and optimizing performance.
 	\item \link{https://github.com/Logarithmus/led-wave-potentiometer}{\textbf{led-wave-potentiometer}}
 		(\textbf{C}, \textbf{C++}, \textbf{FreeRTOS}):
 		10 blinking LEDs, blinking speed is controlled by the potentiometer and is displayed on the 7-segment display. Employs FreeRTOS for multitasking. Based on ATMega88PA AVR microcontroller.
-	\item \link{https://github.com/Logarithmus/battleship}{\textbf{battleship}}
-		\textbf{[WIP]} (\textbf{C++, Boost Beast, SFML}):
-		Battleship game with multiplayer.
 	\item \link{https://github.com/Logarithmus/railway-reservation-rs}{\textbf{railway-reservation-rs}}
 		(\textbf{Rust}, \textbf{actix-web}, \textbf{MySQL (MariaDB)}):
 		Railway tickets reservation website (university course project).
@@ -148,14 +155,14 @@ Like solving challenging problems and optimizing performance.
 \sectionTitle{Contributions}{\faCodeBranch}
 %======================================================================
 \begin{itemize}
-	\item \link{https://github.com/void-linux/void-packages}{\textbf{Void Linux}} (Linux distribution): added new packages (\link{https://github.com/void-linux/void-packages/pull/25159}{\textbf{avr-gdb}}, \link{https://github.com/void-linux/void-packages/pull/25742}{\textbf{simutron}}, \link{https://github.com/void-linux/void-packages/pull/25360}{\textbf{symlinks}}, \link{https://github.com/void-linux/void-packages/pull/25942}{\textbf{avra}}),\\
-		updated \& fixed packages (\link{https://github.com/void-linux/void-packages/pull/25147}{\textbf{avrdude}}, \link{https://github.com/void-linux/void-packages/pull/26144}{\textbf{chromium}}, \link{https://github.com/void-linux/void-packages/pull/26347}{\textbf{s3cmd}}, \link{https://github.com/void-linux/void-packages/pull/29096}{\textbf{imv}}, \link{https://github.com/void-linux/void-packages/pull/31667}{\textbf{pulseeffects}}, \link{https://github.com/void-linux/void-packages/pull/31807}{\textbf{rust-analyzer}})
 	\item \link{https://github.com/rui314/mold}{\textbf{mold}} (a modern linker): improved docs, optimized CI, helped to fix some tests.
-	\item \link{https://gitlab.com/lucciocarreras/sayonara-player}{\textbf{Sayonara}} (music player): fix compilation with \link{https://musl.libc.org}{\textbf{musl}} libc
+	\item \link{https://git.sr.ht/~kennylevinsen/wlsunset}{\textbf{wlsunset}}: added support for running on specific displays.
+	\item \link{https://gitlab.com/lucciocarreras/sayonara-player}{\textbf{Sayonara}} (music player): fixed compilation with \link{https://musl.libc.org}{\textbf{musl}} libc
 		\item \link{https://github.com/autozimu/LanguageClient-neovim}{\textbf{LanguageClient-neovim}} (LSP plugin for NeoVIM): added support for rust-analyzer's type \& parameter hints.
-		\item \link{https://github.com/sadko4u/lsp-plugins}{\textbf{lsp-plugins}} (audio plugins for Linux): fix compilation with \link{https://musl.libc.org}{\textbf{musl}}, improve debugging experience,\\
-		support cross-compilation (waiting for review)
-	\item \link{https://github.com/avr-rust/avr-mcu}{\textbf{avr-rust/avr-mcu}}, \link{https://github.com/avr-rust/avrd}{\textbf{avr-rust/avrd}} (AVR device definitions): improve compile times, made code more idiomatic
+		\item \link{https://github.com/sadko4u/lsp-plugins}{\textbf{lsp-plugins}} (audio plugins for Linux): fixed compilation with \link{https://musl.libc.org}{\textbf{musl}}, improved debugging experience.
+	\item \link{https://github.com/avr-rust/avr-mcu}{\textbf{avr-rust/avr-mcu}}, \link{https://github.com/avr-rust/avrd}{\textbf{avr-rust/avrd}} (AVR device definitions): improved compile times, made code more idiomatic
+	\item \link{https://github.com/void-linux/void-packages}{\textbf{Void Linux}} (GNU/Linux distribution): added new packages (\link{https://github.com/void-linux/void-packages/pull/25159}{\textbf{avr-gdb}}, \link{https://github.com/void-linux/void-packages/pull/25742}{\textbf{simutron}}, \link{https://github.com/void-linux/void-packages/pull/25360}{\textbf{symlinks}}, \link{https://github.com/void-linux/void-packages/pull/25942}{\textbf{avra}}),\\
+		updated \& fixed packages (\link{https://github.com/void-linux/void-packages/pull/25147}{\textbf{avrdude}}, \link{https://github.com/void-linux/void-packages/pull/26144}{\textbf{chromium}}, \link{https://github.com/void-linux/void-packages/pull/26347}{\textbf{s3cmd}}, \link{https://github.com/void-linux/void-packages/pull/29096}{\textbf{imv}}, \link{https://github.com/void-linux/void-packages/pull/31667}{\textbf{pulseeffects}}, \link{https://github.com/void-linux/void-packages/pull/31807}{\textbf{rust-analyzer}})
 \end{itemize}
 
 %======================================================================
